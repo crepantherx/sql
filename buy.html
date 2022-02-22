@@ -51,11 +51,46 @@
 
         <main>
             <label style="line-height: 1.6;">
-                After successful payment, <br>send your transaction id at<br>
-                <p style="color:rgb(0, 187, 0); letter-spacing:1px; text-transform: none">
-                    <code>crepantherx@gmail.com</code>
-                </p> <br>Then, 
-                <br>you will receive an e-mail <br>with the enclosed password<br> to open the pdf.
+                After 
+                <code style="color:rgb(0, 187, 0); letter-spacing:1px; text-transform: none">
+                    <code>successful</code>
+                </code> 
+                 payment<br>Please provide us your<br><br>
+
+                <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="crepantherx@gmail.com"
+                action="https://script.google.com/macros/s/AKfycbykDFz6pMqiIhsk2IhQ6As68FYH_GysbqIt7ywn1nW6I5gL4HV6fSJTdw-M-24uQoiIZg/exec">
+
+                <label for="name">
+                Transaction ID:<br>
+                </label>
+                <input id="name" name="name" placeholder="Type here" />
+                <br><br>
+
+                <!-- <label>
+                    Your file:<br>
+                    <input type="file" id="message" name="message">
+                  </label>
+                  <br><br> -->
+
+                <!-- <label for="message">Set: </label><br>
+                <input id="message" name="message" placeholder="A or B" />
+                <br><br> -->
+                
+                <label for="email"> 
+                    Email ID:
+                </label><br>
+                <input id="email" name="email" type="email" value=""
+                required placeholder="Type here" />
+                <br>
+               
+                <br>you will be receiving an e-mail <br>with the enclosed password<br> to open the pdf & all resources.<br><br>
+               
+               
+                <button class="btn">
+                <i class="fa fa-paper-plane"></i>&nbsp;Send
+                </button>
+                </form>
+
             </label>
             <section style="width: 25vw">
             
@@ -64,10 +99,53 @@
                 <label>Pay only Rs.49</label>
                 <img src="../icon/upi.png" alt="" width="200" height="200">
                 <a href="../question/SQL_A.pdf" class="btn" download rel="noopener noreferrer" target="_blank">
-                    Download
+                    Download PDF
                 </a>
-                
+
             </section>
+            <!-- <section>
+                <form action="">
+                    <section>
+                        <label for="">Your Email</label><br>
+                        <input type="email" autocomplete="email" required>
+                    </section>
+    <br><br>
+                    <section>
+                        <label for="">Subject</label><br>
+                        <input type="text" required>
+                    </section>
+    <br><br>
+                    
+                    <section>
+                        <label for="">Message</label><br>
+                        <textarea name="" id="" required></textarea>
+                    </section>
+    <br><br>
+                    <button>Send Message</button>
+                </form>
+    
+            </section> -->
+
+            <!-- <section>
+                <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="crepantherx@gmail.com"
+                action="https://script.google.com/macros/s/AKfycbykDFz6pMqiIhsk2IhQ6As68FYH_GysbqIt7ywn1nW6I5gL4HV6fSJTdw-M-24uQoiIZg/exec">
+
+                <label for="name">Name: </label>
+                <input id="name" name="name" placeholder="What your Mom calls you" />
+                <br>
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="10"
+                    placeholder="Tell us what's on your mind..."></textarea>
+                <br>
+                <label for="email"><em>Your</em> Email Address:</label>
+                <input id="email" name="email" type="email" value=""
+                required placeholder="your.name@email.com" />
+
+                <button class="button-success pure-button button-xlarge">
+                <i class="fa fa-paper-plane"></i>&nbsp;Send
+                </button>
+                </form>
+            </section> -->
 
         </main>
         
