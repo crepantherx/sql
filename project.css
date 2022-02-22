@@ -1,0 +1,67 @@
+body {
+  height: calc(100vh - 8em);
+  color: rgba(255, 255, 255, 0.75);
+  background-color: rgb(25, 25, 25);
+}
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Hacker Noon V1";
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+body {
+  height: 80vh;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  font-size: 3vh;
+  align-items: center;
+  justify-items: center;
+  height: 99vh;
+}
+
+.logo {
+  padding: 7px;
+  display: grid;
+  align-self: stretch;
+  justify-self: stretch;
+  text-decoration: none;
+  border: 1px solid rgb(0, 187, 0);
+}
+#symbol-js {
+  text-align: center;
+  justify-self: stretch;
+  align-self: center;
+  color: white;
+  text-decoration: none;
+}
+
+/* #symbol-js:hover {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+} */
+
+.logo:hover {
+  background-color: black;
+  /* background-color: black; */
+}
+
+.logo:hover > #symbol-js {
+  color: rgb(0, 187, 0);
+}
+
+@media screen and (max-width: 720px) {
+  main {
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .logo {
+    width: 98vw;
+  }
+}
